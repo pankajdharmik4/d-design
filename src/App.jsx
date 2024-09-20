@@ -15,6 +15,8 @@ import AboutUs from "./components/Aboutus/AboutUs";
 import LoveInvasign from "./components/LoveInvasign/LoveInvasign";
 import Gallery from "./components/Gallery/Gallery";
 import GalleryCarousel from "./components/Gallery/Gallery";
+import Team from "./components/Team/Team"
+import ContactUs from "./components/Contact/Contact"; 
 
 const BannerData = {
   image: Img1,
@@ -45,11 +47,13 @@ const App = () => {
       <WhyChooseUs />
       <AboutUs data={JsonData.About}/>
       <LoveInvasign/>
-      <GalleryCarousel/>
-      <Banner {...BannerData} />
-      <Banner {...BannerData2} reverse={true} />
-      <SubjectCard />
       <Testimonial />
+      <GalleryCarousel/>
+      <Team/>
+      <ContactUs/>
+      {/* <Banner {...BannerData} />
+      <Banner {...BannerData2} reverse={true} /> */}
+      {/* <SubjectCard /> */}
       <Footer />
     </main>
   );
